@@ -1,16 +1,15 @@
 import "./header.css";
-import logoSrc from "../assets/logo.png";
 import { createElement } from "../utils/elements";
 
 function Header() {
-  const logo = createElement("img", {
-    src: logoSrc,
-    alt: "Logo",
+  const headline = createElement("h1", {
+    className: "header__headline",
+    innerText: "Rick and Morty",
   });
 
   const header = createElement("header", {
     className: "header",
-    children: [logo],
+    children: [headline],
   });
   return header;
 }
