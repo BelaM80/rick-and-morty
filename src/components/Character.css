@@ -1,0 +1,14 @@
+.character {
+  border: 1px solid black;
+  width: fit-content;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  color: #ffff;
+  text-align: center;
+}
+
+.character > img {
+  margin-top: 10px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}

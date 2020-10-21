@@ -3,6 +3,10 @@
 *::after {
   box-sizing: border-box;
 }
+:root {
+  --primary-color: rgb(36, 40, 47);
+  --secondary-color: rgb(61 62 68);
+}
 
 html {
   font-size: 16px;
@@ -10,5 +14,11 @@ html {
 
 body {
   margin: 0;
-  background: darkslategray;
+  background: var(--primary-color);
+}
+
+.main {
+  padding: 30px 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
