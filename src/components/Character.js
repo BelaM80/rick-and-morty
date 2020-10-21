@@ -1,4 +1,5 @@
 import { container } from "webpack";
+import "./Character.css";
 import { createElement } from "../utils/elements";
 
 function Character({ name, imgSrc }) {
@@ -10,7 +11,7 @@ function Character({ name, imgSrc }) {
     alt: name,
   });
 
-  const conatainer = createElement("div", {
+  const container = createElement("div", {
     clasName: "character",
     children: [title, avatar],
   });
