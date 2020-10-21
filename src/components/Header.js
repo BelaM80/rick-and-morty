@@ -7,16 +7,11 @@ function Header() {
     innerText: "Rick and Morty",
   });
 
-  const searchInput = createElement("input", {
-    className: "header__input",
-  });
-
   const header = createElement("header", {
     className: "header",
     children: [headline],
   });
 
-  header.append(searchInput);
   return header;
 }
 
