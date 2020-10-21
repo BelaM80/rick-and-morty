@@ -1,8 +1,10 @@
 .character {
   border: 1px solid black;
   width: fit-content;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   border-radius: 15px;
+  color: #ffff;
+  text-align: center;
 }
 
 .character > img {

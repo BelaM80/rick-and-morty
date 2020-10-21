@@ -3,7 +3,7 @@ import { createElement } from "../utils/elements";
 
 function Characters() {
   const characters = createElement("section", {
-    className: "chaaracters",
+    className: "characters",
   });
   return characters;
 }
