@@ -1,4 +1,3 @@
-import { container } from "webpack";
 import "./Character.css";
 import { createElement } from "../utils/elements";
 
@@ -12,7 +11,7 @@ function Character({ name, imgSrc }) {
   });
 
   const container = createElement("div", {
-    clasName: "character",
+    className: "character",
     children: [title, avatar],
   });
 
