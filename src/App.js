@@ -2,6 +2,7 @@ import "./app.css";
 import Character from "./components/Character";
 import Characters from "./components/Characters";
 import Header from "./components/Header";
+import Search from "./components/Search";
 import { getCharacters } from "./utils/api";
 import { createElement } from "./utils/elements";
 import Button from "./components/Button";
@@ -40,14 +41,14 @@ function App() {
     main.append(loadMoreButton);
   }
 
-  const searchBar = createElement("input", {
-    className: "searchbar",
-    onchange: (event) => loadCharacters(event.target.value),
+  const search = Search({
+    onchange: (value) => loadCharacters(value),
   });
 
   loadCharacters();
+
   const container = createElement("div", {
-    children: [header, searchBar, main],
+    children: [header, search, main],
   });
 
   window.addEventListener("scroll", () => {
