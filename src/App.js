@@ -25,8 +25,10 @@ function App() {
     characterContainer.innerHTML = "";
     characterContainer.append(...characterElements);
   }
+  //characters info nextﬁ
 
   const searchBar = createElement("input", {
+    className: "searchbar",
     onchange: (event) => loadCharacters(event.target.value),
   });
 
