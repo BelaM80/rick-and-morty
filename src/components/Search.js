@@ -1,7 +1,7 @@
 import "./search.css";
 import { createElement } from "../utils/elements";
 
-function Search({ omchange }) {
+function Search({ onchange }) {
   const input = createElement("input", {
     placeholder: "Enter character",
   });
