@@ -3,7 +3,7 @@ import { createElement } from "../utils/elements";
 
 function Character({ name, imgSrc }) {
   const title = createElement("p", {
-    className: "chacter__title",
+    className: "character__title",
     innerText: name,
   });
   const avatar = createElement("img", {

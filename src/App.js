@@ -52,7 +52,7 @@ function App() {
 
   window.addEventListener("scroll", () => {
     const offsetY =
-      loadMoreButton.offsetParent.offsetHeight - window.innerHeight - 200;
+      loadMoreButton.offsetParent.offsetHeight - window.innerHeight - 30;
     if (offsetY < window.pageYOffset) {
       loadMoreButton.click();
     }
