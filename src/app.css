@@ -10,17 +10,16 @@
 
 html {
   font-size: 16px;
+  background: var(--primary-color);
 }
 
 body {
   margin: 0;
-  background: var(--primary-color);
 }
 
 .main {
   padding: 30px 20px;
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center;
 }
 .searchbar {
   margin: 10px 10px;
