@@ -3,13 +3,14 @@ import { createElement } from "../utils/elements";
 
 function Character({ name, imgSrc }) {
   const title = createElement("p", {
-    className: "chacter__title",
+    className: "character__title",
     innerText: name,
   });
   const avatar = createElement("img", {
     className: "character__img",
     src: imgSrc,
     alt: name,
+    loading: "lazy",
   });
 
   const container = createElement("article", {
